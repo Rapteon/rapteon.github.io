@@ -1,3 +1,9 @@
+:root{
+	--default-image-size:500px;
+}
+@media (max-width:350px){
+	--default-image-size:250px;	
+}
 p,h1 {
 	text-align: center;
 }
@@ -5,4 +11,5 @@ p,h1 {
 img {
 	display: block;
 	margin: 0 auto;
+	width:var(--default-image-size);
 }
