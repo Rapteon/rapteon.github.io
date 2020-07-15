@@ -1,12 +1,226 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Under Construction</title>
-		<meta charset="utf-8">
-		<link href="styles/tempstyle.css" rel="stylesheet" type="text/css">
-	</head>
-	<body>
-		<p style="font-size: 0.9rem;font-style: italic;"><img style="display: block;" src="https://svgsilh.com/png/145925-9e9e9e.png" alt="man at work"><a href="https://svgsilh.com/ms/9e9e9e/image/145925.html">"pekerja"</a> is licensed under <a href="https://creativecommons.org/licenses/cc0/1.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC0 1.0</a></p>
-		<h1>This site is under construction.</h1>
-	</body>
+    <head>
+        <title>10JUL2020</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="//brick.freetls.fastly.net/BPreplay:400,700/Lora:400,400i/Fira+Mono:400,500">
+    </head>
+    <style>
+        :root{
+            --primary-blue:#5E9FF2;
+            --darker-blue:#2D4B73;
+            --black:#0D0D0D;
+            --bright-blue:#2165BF;
+            --lighter-than-bright:#5C8EF2;
+        }
+        hr{
+            color:var(--primary-blue);
+            background-color: var(--primary-blue);
+            border:none;
+            height:2px;
+            margin-top:2rem;
+            margin-bottom:2rem;
+        }
+        h1, h2, h3{
+            font-family: "BPreplay", sans-serif;
+        }
+        a:link{
+            color:var(--primary-blue);
+            text-decoration: none;
+        }
+        a:visited{
+            color:var(--bright-blue)
+        }
+        a:hover{
+            color:var(--lighter-than-bright);
+        }
+        body{
+            color:var(--darker-blue);
+            font-size:2vh;
+        }
+        #main-logo{
+            display: block;
+            max-width:20%;
+            height:6rem;
+            border-radius: 0.7rem;
+            margin:auto;
+        }
+        #quick-navigation{
+            position:fixed;
+            left:2rem;
+            border:1px solid var(--lighter-than-bright);
+            border-radius: 0.7rem;
+            margin:5rem;
+            box-shadow: -15px 10px 1px 2px var(--lighter-than-bright);
+        }
+        #link-1{
+            animation-name: "the-fade";
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+        }
+        #link-2{
+            animation-name: "the-fade";
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            animation-delay:500ms;
+        }
+        .nav-link{
+            list-style: none;
+            font-family: "Fira Code", monospace;
+            margin-right:1rem;
+        }
+        .info-text{
+            font-family: "Fira Code", monospace;
+        }
+        .normal-text{
+            font-family:"Lora", serif;
+            line-height: 4vh;
+        }
+        .centered{
+            margin: auto;
+            align-content:center;
+            width:50%;
+        }
+        .section-separator{
+            color:var(--lighter-than-bright, lightsteelblue);
+            width:50%;
+        }
+        @keyframes the-fade{
+            0%{
+                opacity: 100%;
+            }
+            50%{
+                opacity: 50%;
+            }
+            0%{
+                opacity:100%;
+            }
+        }
+        @media (max-width:480px){
+            hr{
+            color:var(--primary-blue);
+            background-color: var(--primary-blue);
+            border:none;
+            height:1px;
+            margin-top:1rem;
+            margin-bottom:1rem;
+            }
+            h1, h2, h3{
+                font-family: "BPreplay", sans-serif;
+            }
+            a:link{
+                color:var(--primary-blue);
+                text-decoration: none;
+            }
+            a:visited{
+                color:var(--bright-blue)
+            }
+            a:hover{
+                color:var(--lighter-than-bright);
+            }
+            body{
+                color:var(--darker-blue);
+            }
+            #main-logo{
+                display: block;
+                height:3rem;
+                border-radius: 0.35rem;
+                margin:auto;
+            }
+            #quick-navigation{
+                position:fixed;
+                left:1rem;
+                border:0.5px solid var(--lighter-than-bright);
+                border-radius: 0.35rem;
+                margin:2.5rem;
+                box-shadow: -7.5px 5px 0.5px 1px var(--lighter-than-bright);
+            }
+            #link-1{
+                animation-name: "the-fade";
+                animation-iteration-count: infinite;
+                animation-duration: 2.5s;
+            }
+            #link-2{
+                animation-name: "the-fade";
+                animation-iteration-count: infinite;
+                animation-duration: 2.5s;
+                animation-delay:600ms;
+            }
+            .nav-link{
+                list-style: none;
+                font-family: "Fira Code", monospace;
+                margin-right:0.5rem;
+            }
+            .info-text{
+                font-family: "Fira Code", monospace;
+            }
+            .normal-text{
+                font-family:"Lora", serif;
+            }
+            .centered{
+                margin: auto;
+                align-content:center;
+                width:50%;
+            }
+            .section-separator{
+                color:var(--lighter-than-bright, lightsteelblue);
+                width:50%;
+            }
+        }
+    </style>
+    <body>
+        <header>
+            <img id="main-logo" src="images/private-logo.png">
+            <hr>
+            <div id="quick-navigation">
+                <nav accesskey="l" tabindex="1">
+                    <ul>
+                        <li id="link-1" class="nav-link"><a href="#studies">Studies</a></li>
+                        <li id="link-2" class="nav-link"><a href="#social">Social</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="centered normal-text">
+                <p>
+                    para
+                </p>
+        </main>
+        <section id="studies" class="centered normal-text">
+            <h2>head-2</h2>
+            <p>
+                para
+            </p>
+            <h2>head-2</h2>
+            <p>
+                para
+            </p>
+            <h2>head-2</h2>
+            <p>
+                
+            </p>
+            <h2>head-2</h2>
+            <p>
+                para
+            </p>
+        </section>
+        <hr class="section-separator">
+        <section id="social" class="centered normal-text">
+            <h2>head-2</h2>
+            <p>
+                para
+                <ul>
+                    <li>item-1</li>
+                    <li>item-2</li>
+                    <li>item-1</li>
+                    <li>item-3</li>
+                    <li>item-1</li>
+                    <li>item-1</li>
+                </ul>
+            </p>
+            <p class="info-text">
+                para-info
+            </p>
+        </section>
+    </body>
 </html>
