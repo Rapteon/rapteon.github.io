@@ -76,7 +76,6 @@ img{
 }
 .normal-text{
     font-family:"Lora", serif;
-    line-height: 4vh;
 }
 .centered{
     margin: auto;
@@ -86,6 +85,11 @@ img{
 .section-separator{
     color:var(--lighter-than-bright, lightsteelblue);
     width:50%;
+    margin:auto;
+}
+.less-important{
+    position:relative;
+    left:2vw;
 }
 @keyframes the-fade{
     0%{
@@ -176,5 +180,9 @@ img{
     .section-separator{
         color:var(--lighter-than-bright, lightsteelblue);
         width:80%;
+    }
+    .less-important{
+        position:relative;
+        left:1vw;
     }
 }
