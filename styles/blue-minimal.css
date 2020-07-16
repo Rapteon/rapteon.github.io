@@ -36,6 +36,10 @@ address{
 dt{
     font-weight: bold;
 }
+img{
+    display: block;
+    margin:auto;
+}
 #main-logo{
     display: block;
     max-width:20%;
