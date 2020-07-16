@@ -30,6 +30,9 @@ body{
     color:var(--darker-blue);
     font-size:2vh;
 }
+address{
+    font-style: normal;
+}
 #main-logo{
     display: block;
     max-width:20%;
