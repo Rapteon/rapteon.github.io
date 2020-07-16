@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>10JUL2020</title>
+        <title>Rise of the Machines</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="//brick.freetls.fastly.net/BPreplay:400,700/Lora:400,400i/Fira+Mono:400,500">
         <link href="styles/blue-minimal.css" type="text/css"  rel="stylesheet">
@@ -19,47 +19,161 @@
                     </ul>
                 </nav>
             </div>
+            <h1 class="centered">Rise of the Machines</h1>
+            <img class="centered" src="images/machine-environment.png" alt="image-of-a-machine-and-its-environment">
         </header>
         <main class="centered normal-text">
                 <p>
-                    para
+                    The internet is arguably the most important invention of the 20th century, and its widespread adoption
+                    provides ample proof. India has the second largest number of internet users, most of whom access the internet
+                    through their smartphones. I don't intend to extol the virtues of the internet in this post, but to scrutinize the
+                    mechanism which has made this possible—computers.
                 </p>
         </main>
-        <section id="studies" class="centered normal-text">
-            <h2>head-2</h2>
+        <section class="centered normal-text">
+            <h2>The Future</h2>
             <p>
-                para
+                Computers come in all shapes, sizes and capacities. From the very tiny computer ticking in your wristwatch to the ones
+                maneuvering a space shuttle, they have opened up avenues for automation in a wide variety of industries, but what else
+                can be done with them? Are there applications much more impactful than the internet waiting to be discovered? Is there
+                a limit to what can be computed?
             </p>
-            <h2>head-2</h2>
+            <h2>Computers and Abstract Machines</h2>
             <p>
-                para
+                The answers to the last question can be found in a branch of the field of theory of computation,
+                <a href="https://en.wikipedia.org/wiki/Theory_of_computation">called automata theory.</a> Before explaining 
+                what automatons are, here are some definitions to know:
+                <dl>
+                    <dt>Automata</dt>
+                    <dd>
+                        <ol>
+                            <li>A mathematical model of computer hardware and software.</li>
+                            <li>Or an abstract machine.</li>
+                        </ol>
+                    </dd>
+                    <dt>Finite State Machine</dt>
+                    <dd>
+                        <ol>
+                            <li>
+                                It is an abstract model of a machine(automaton) which can be in exactly one of a number of states 
+                                at a given time.
+                            </li>
+                        </ol>
+                    </dd>
+                </dl>
             </p>
-            <h2>head-2</h2>
             <p>
-                
+                To study what a computer can or cannot do, we study its capacity to perform a computation (such as addition),
+                through the notion of an abstract machine called an automaton (plural: automata). In this case, we choose to
+                ignore the physical aspects of a machine, such as the materials used for construction, physical effects such as 
+                friction between components, heat released etc. The advantage of such a mode of analysis is that we an theoretically
+                the possibility or impossibility of a computation.
             </p>
-            <h2>head-2</h2>
+            <h2>The Idea of a Machine</h2>
             <p>
-                para
+                Although the word "machine" is frequently used in daily conversations, asking someone to define a machine often introduces
+                a lot of ambiguity, since the answer depends on what the person thinks a machine is. A magnifying glass is
+                definitely not considered as a machine by most people, while a sewing machine is. Most people think of machines as a
+                collection of moving parts working together to complete a given task. If we consider this definition, does that imply that 
+                the cells in an organism are the parts of an overall machine making up the body of the organism? In short, the definition
+                of machines from everyday conversations is not so useful for scientific analysis.
+            </p>
+            <h2>Eliminating ambiguity</h2>
+            <p>
+                Since a precise definition of a machine is not possible, in computer science, we try to study an abstract version of a
+                machine, called an automaton. Abstraction of underlying details leaves us with a barebones representation of what the
+                machine actually does.
             </p>
         </section>
         <hr class="section-separator">
-        <section id="social" class="centered normal-text">
-            <h2>head-2</h2>
+        <section class="centered normal-text">
+            <h2>A real world example</h2>
             <p>
-                para
-                <ul>
-                    <li>item-1</li>
-                    <li>item-2</li>
-                    <li>item-1</li>
-                    <li>item-3</li>
-                    <li>item-1</li>
-                    <li>item-1</li>
-                </ul>
+                Assume that you need to start your car's engine and go somewhere. When you walk to the garage, you try to unlock the car
+                door, either using the remote key or by physically inserting the key. The car is a machine in its own right.
+                Before you unlocked the car, it was in the the "locked" state. After the key is used, it enters the "unlocked" state,
+                which allows you to drive, start the engine and perform many other actions. If in the unlocked state, you try to start
+                the car by using the key, then the engine will start in the ideal case, thus causing the car to enter the "running" state.
+                If we go up another layer of abstraction, we can consider the machine(car) as a black box, which takes in inputs(key, driver)
+                to change from one state to another.
             </p>
             <p class="info-text">
-                para-info
+                Note:<br>Before I really show you the abstract machine, it is worth mentioning that a car isn't a deterministic machine, 
+                since its state may be influenced by many continuously varying factors, such as friction between components of the engine,
+                state of charge of the battery etc.
             </p>
+        </section>
+        <hr class="section-separator">
+        <section class="centered normal-text">
+            <h2>Finite Automata</h2>
+            <img class="centered" style="width:100%;" src="images/light-switch-state-diagram.png" alt="state diagram of a light switch">
+            <p>
+                A machine of this type only exists in a finite number of states. A simple example will be a light switch.
+                When the light switch is in the "off" state, and it is pressed in the correct place to turn it on, it will turn on. If from the "on"
+                state it is pressed in th appropriate location, it will turn off. The two loops denote the transitions when the switch is
+                pressed the wrong way.
+            </p>
+            <h2>Deterministic Finite Automata</h2>
+            <p>
+                A deterministic finite automata or a DFA is a a type of finite state automaton that has all the properties of a finite state automaton
+                in addition to the ability to take accept or reject strings created from a set of symbols. It does this by running through some
+                well-defined sequence which is determined by the input string. The set of symbols can include anything, such as emojis &#x1F31D,
+                binary numbers, and even English alphabets. This means that a string can look like "&#x1F315&#x1F314&#x1F313&#x1F312&#x1F311" and "for".
+                However, we usually consider binary numbers to be the set of symbols and input strings end up looking like this "<code>0011001101</code>".
+                This automaton reads each symbol to consider its next state.
+            </p>
+            <h3>Formal representation of a DFA</h3>
+            <p>
+                A DFA <code>M</code> can be represented in the form of a 5–element tuple <code>(Q, Σ, δ, q<sub>0</sub>, F)</code>
+                where <code>Q</code> is a finite set of states which can be reached by the machine, Σ is the set containing all the input symbols
+                which can be used to build strings, δ represents the state transition function from the set Q×Σ→Q. <code>q<sub>0</sub></code> is the 
+                initial state of the machine and F represents the set of accepting states.
+            </p>
+            <h3>Example</h3>
+            <img class="centered" style="width:100%;" src="images/dfa.png" alt="state diagram showing a DFA">
+            <p>
+                The above diagram represents a DFA which accepts the string "hi" to reach state <code>q<sub>2</sub></code>. The DFA can be described as
+                follows:
+                <code>
+                    <ul>
+                        <li>Q = {q<sub>0</sub>, q<sub>1</sub>, q<sub>2</sub>}</li>
+                        <li>Σ = {h, i}</li>
+                        <li>q<sub>0</sub> is the initial state</li>
+                        <li>F = {q<sub>2</sub>}</li>
+                        <li>
+                            δ is the transition function applied as follows:
+                            <ul>
+                                <li>δ(q<sub>0</sub>, h) = q<sub>1</sub></li>
+                                <li>δ(q<sub>1</sub>, i) = q<sub>2</sub></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </code>
+                The edges denote the transitions from one state to another, and the nodes are the various states reached by the 
+                machine upon accepting each symbol from the string "hi".
+            </p>
+            <p class="info-text">
+                Note:<br>
+                The q<sub>0</sub>, q<sub>1</sub> and q<sub>2</sub> are the states of the machine and not three different machines.
+            </p>
+        </section>
+        <section class="centered">
+            <h2>Enfin</h2>
+            <p>
+                From this discussion of abstract machines, a key takeway is that there are limitations to what can and can't be
+                done using computers. Moreover, such machines play a very important role in parsers which analyse strings
+                in compilers to generate <a href="https://en.wikipedia.org/wiki/Parse_tree">parse trees</a>.
+            </p>
+        </section>
+        <section class="centered">
+            <h2>References</h2>
+            <ul>
+                <li>Computation: Finite and Infinite Machines by Marvin Minksy</li>
+                <li>Introduction to Automata Theory, Langauges and Computation by Hopcroft, Motwani and Ullman</li>
+                <li><a href="https://en.wikipedia.org/wiki/Deterministic_finite_automaton">Deterministic Finite Automata</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Finite-state_machine">Finite Automata</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Theory_of_computation">Theory of Computation</a></li>
+            </ul>
         </section>
     </body>
 </html>
