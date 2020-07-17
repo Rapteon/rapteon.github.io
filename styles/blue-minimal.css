@@ -102,7 +102,7 @@ img{
         opacity:100%;
     }
 }
-@media (max-width:1080px) and (max-height:2340px){
+@media (max-width:1080px) , (min-height:2160px){
     hr{
     color:var(--primary-blue);
     background-color: var(--primary-blue);
@@ -129,7 +129,7 @@ img{
     }
     body{
         color:var(--darker-blue);
-        font-size:1vh;
+        font-size:1.5vh;
     }
     #main-logo{
         display: block;
@@ -175,7 +175,7 @@ img{
     .centered{
         margin: auto;
         align-content:center;
-        width:80%;
+        width:100%;
     }
     .section-separator{
         color:var(--lighter-than-bright, lightsteelblue);
