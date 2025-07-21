@@ -1,0 +1,11 @@
+<main>
+  <h2>My Projects</h2>
+  @for (project of projects; track $index) {
+  <app-card
+    name="{{ project.name }}"
+    description="{{ project.description }}"
+    imagePath="{{ project.imagePath }}"
+    sourceCodeURL="{{ project.sourceCodeURL }}"
+  ></app-card>
+  }
+</main>

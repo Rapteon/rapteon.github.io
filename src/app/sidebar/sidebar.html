@@ -1,0 +1,20 @@
+<aside>
+  <img src="{{ logoPath }}" alt="rapteon-logo" priority />
+  <p>{{ name }}</p>
+  <!-- Emphasise first word, but not the rest. -->
+  <p>
+    <em
+      >{{ quoteWords[0] }}
+      @for (word of quoteWords; track $index) { @if (! $first) {
+      {{ word }}
+      } }
+    </em>
+  </p>
+
+  <nav>
+    <ul>
+      <li><a routerLink="/">About</a></li>
+      <li><a routerLink="/projects">Projects</a></li>
+    </ul>
+  </nav>
+</aside>

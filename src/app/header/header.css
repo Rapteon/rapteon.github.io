@@ -1,0 +1,4 @@
+header > p {
+  /* To limit line length. */
+  max-width: 40em;
+}
