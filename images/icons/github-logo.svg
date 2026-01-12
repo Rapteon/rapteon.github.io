@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="512"
+   height="512"
+   viewBox="0 0 135.46666 135.46667"
+   version="1.1"
+   id="svg5"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="github-logo.svg"
+   inkscape:export-filename="/home/sol/Documents/artwork/github-logo.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <title
+     id="title13">rapteon</title>
+  <metadata
+     id="metadata9">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>rapteon</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Suraj Naranatt</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>All rights reserved.</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:language>English</dc:language>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     width="512px"
+     inkscape:zoom="0.72426347"
+     inkscape:cx="295.47259"
+     inkscape:cy="120.12203"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2" />
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient3084"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#f2e150;stop-opacity:1;"
+         offset="0"
+         id="stop3082" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="bg-square">
+    <rect
+       id="rect15"
+       width="135.46666"
+       height="135.46666"
+       x="3.5603841e-06"
+       y="3.5603841e-06"
+       style="fill:#2165bf;fill-opacity:1;stroke-width:0.26458332" />
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="star"
+       style="fill:#f2e150;fill-rule:evenodd;fill-opacity:1;stroke-width:4.00000005;stroke-miterlimit:4;stroke-dasharray:none;stroke:#f2a668;stroke-opacity:1"
+       id="path39"
+       inkscape:flatsided="false"
+       sodipodi:sides="6"
+       sodipodi:cx="59.091888"
+       sodipodi:cy="152.85498"
+       sodipodi:r1="183.95422"
+       sodipodi:r2="122.22449"
+       sodipodi:arg1="0.22262877"
+       sodipodi:arg2="0.26559737"
+       inkscape:rounded="0.98"
+       inkscape:randomized="0"
+       d="m 238.5062,193.47102 c 15.56912,58.79733 -20.15869,-53.17065 -61.47552,-8.53385 -104.500905,112.89793 45.69442,35.14375 -63.40616,143.60318 -43.135419,42.88192 35.96779,-44.04326 -23.347223,-57.50629 -150.022934,-34.05147 -7.588176,57.14441 -156.067084,16.89025 -58.704543,-15.91541 56.1264717,9.12739 38.128292,-48.97243 -45.522029,-146.94941 -53.282595,22.00065 -92.660925,-126.71294 -15.56913,-58.79733 20.15868,53.17065 61.475516,8.53386 C 45.654002,7.874858 -104.54132,85.62904 4.5592568,-22.830387 47.694676,-65.712312 -31.408533,21.212867 27.906479,34.675898 177.92941,68.727368 35.494656,-22.468507 183.97356,17.785652 242.67811,33.701059 127.84709,8.6582601 145.84527,66.758083 191.3673,213.70749 199.12787,44.757434 238.5062,193.47102 Z"
+       transform="matrix(0.26458333,0,0,0.26458333,52.098605,27.290454)" />
+  </g>
+</svg>
