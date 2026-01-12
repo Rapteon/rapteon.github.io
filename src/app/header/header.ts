@@ -7,13 +7,16 @@ import { Component } from '@angular/core';
   styleUrl: './header.css',
 })
 export class Header {
-  
+  city: string = 'Pune';
+  country: string = 'India';
+  name: string = 'Suraj Naranatt'
+  role: string = 'Junior Software Engineer'
   private getEmail() {
-    const atTheRate = '@'
+    const atTheRate = '@';
     return 'rapteon' + atTheRate + 'tutanota.com';
   }
-  emailClicked (event:Event){
+  emailClicked(event: Event) {
     event.preventDefault();
-    location.href = "mailto:"+this.getEmail()
+    location.href = 'mailto:' + this.getEmail();
   }
 }
