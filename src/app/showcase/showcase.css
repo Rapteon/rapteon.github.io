@@ -1,0 +1,39 @@
+div#showcase {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1600px) {
+  div#showcase {
+    gap: 5vh;
+    margin: 5vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  div#showcase {
+    gap: 3vh;
+    margin: 4vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  div#showcase {
+    gap: 3vh;
+    margin: 4vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  div#showcase {
+    gap: 3vh;
+    margin: 4vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  div#showcase {
+    gap: 2vh;
+    margin: 3vw;
+  }
+}

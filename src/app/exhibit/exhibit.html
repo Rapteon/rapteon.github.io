@@ -1,0 +1,25 @@
+<div class="exhibit">
+  <div class="content">
+    <div class="summary">
+      <h2>{{ exhibit().title }}</h2>
+      @if (exhibit().endDate !== null) {
+        <h3>
+          {{ exhibit().startDate | date: 'mediumDate' }} —
+          {{ exhibit().endDate | date: 'mediumDate' }}
+        </h3>
+      } @else {
+        <h3>{{ exhibit().startDate | date: 'mediumDate' }} — now</h3>
+      }
+    </div>
+    <p class="description">{{ exhibit().description }}</p>
+    <div class="links">
+      <a target="_blank" [href]="exhibit().projectUrl">Code</a>
+      @if (exhibit().demoUrl) {
+        <a target="_blank" [href]="exhibit().demoUrl">Demo</a>
+      }
+    </div>
+  </div>
+  @if (exhibit().imageUrl) {
+    <img [src]="exhibit().imageUrl" width="256" [alt]="exhibit().title" />
+  }
+</div>

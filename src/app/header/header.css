@@ -1,0 +1,43 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw;
+  border-bottom: 3px solid var(--medium-blue);
+}
+
+header > img {
+  height: 100%;
+  width: auto;
+}
+
+
+@media screen and (max-width:1600px) {
+  header > img {
+    max-height: 20vh;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header > img {
+    max-height: 18vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header > img {
+    max-height: 15vh;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header > img {
+    max-height: 13vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  header > img {
+    max-height: 11vh;
+  }
+}
