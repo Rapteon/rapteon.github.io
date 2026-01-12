@@ -12,10 +12,23 @@ header > img {
   width: auto;
 }
 
+button {
+  background-color: var(--medium-blue);
+  color: whitesmoke;
+}
 
-@media screen and (max-width:1600px) {
+button:hover {
+  background-color: var(--industrial-blue);
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1600px) {
   header > img {
     max-height: 20vh;
+  }
+  button {
+    padding: 0.5rem;
   }
 }
 
@@ -23,11 +36,17 @@ header > img {
   header > img {
     max-height: 18vh;
   }
+  button {
+    padding: 0.8rem;
+  }
 }
 
 @media screen and (max-width: 900px) {
   header > img {
     max-height: 15vh;
+  }
+  button {
+    padding: 0.75rem;
   }
 }
 
@@ -35,9 +54,15 @@ header > img {
   header > img {
     max-height: 13vh;
   }
+  button {
+    padding: 0.5rem;
+  }
 }
 @media screen and (max-width: 400px) {
   header > img {
     max-height: 11vh;
+  }
+  button {
+    padding: 0.25rem;
   }
 }
