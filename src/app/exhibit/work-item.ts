@@ -1,3 +1,6 @@
+import { Framework } from "./framework";
+import { Language } from "./language";
+
 export type WorkItem = {
   imageUrl?: string | null;
   title: string;
@@ -7,4 +10,6 @@ export type WorkItem = {
   demoUrl?: URL;
   startDate: Date;
   endDate: Date | null;
+  languages: Set<Language>,
+  frameworks?: Set<Framework>
 };

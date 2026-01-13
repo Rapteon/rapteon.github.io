@@ -12,6 +12,26 @@
       }
     </div>
     <p class="description">{{ exhibit().description }}</p>
+    <div class="stack">
+      <div>
+        <label for="languages">Languages:</label>
+        <div id="languages">
+          @for (lang of exhibit().languages; track lang) {
+            <div class="chip">{{ lang }}</div>
+          }
+        </div>
+      </div>
+      @if (exhibit().frameworks) {
+        <div>
+          <label for="frameworks">Frameworks:</label>
+          <div id="frameworks">
+            @for (framework of exhibit().frameworks; track framework) {
+              <div class="chip">{{ framework }}</div>
+            }
+          </div>
+        </div>
+      }
+    </div>
     <div class="links">
       <a target="_blank" [href]="exhibit().projectUrl">Code</a>
       @if (exhibit().demoUrl) {

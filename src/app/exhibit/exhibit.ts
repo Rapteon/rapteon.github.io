@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { WorkItem } from '../showcase/work-item';
+import { WorkItem } from './work-item';
 import { DatePipe } from '@angular/common';
 
 @Component({
@@ -16,6 +16,7 @@ export class Exhibit {
     type: 'public',
     startDate: new Date(Date.parse('1970-01-01')),
     endDate: null,
+    languages: new Set(),
   };
   exhibit = input(Exhibit.defaultExhibit);
 }

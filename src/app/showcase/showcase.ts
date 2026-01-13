@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { WorkItem } from './work-item';
+import { WorkItem } from '../exhibit/work-item';
 import { Exhibit } from '../exhibit/exhibit';
+import { Language } from '../exhibit/language';
+import { Framework } from '../exhibit/framework';
 
 @Component({
   selector: 'app-showcase',
@@ -19,6 +21,7 @@ export class Showcase {
         type: 'public',
         startDate: new Date(Date.parse('2021-11-01')),
         endDate: new Date(Date.parse('2021-11-11')),
+        languages: new Set([Language.Other]),
       },
       {
         imageUrl: 'images/showcase/qry.jpg',
@@ -30,6 +33,8 @@ export class Showcase {
         type: 'private',
         startDate: new Date('2022-11-10'),
         endDate: new Date('2022-11-12'),
+        languages: new Set([Language.TypeScript, Language.HTML, Language.CSS]),
+        frameworks: new Set([Framework.Angular]),
       },
       {
         title: 'Marky',
@@ -40,6 +45,8 @@ content. Uses markd.js library for rendering and generating Markdown from text.`
         type: 'private',
         startDate: new Date(Date.parse('2022-09-24')),
         endDate: new Date(Date.parse('2022-11-05')),
+        languages: new Set([Language.TypeScript, Language.HTML, Language.CSS]),
+        frameworks: new Set([Framework.Angular]),
       },
       {
         title: 'Vakk',
@@ -49,6 +56,8 @@ content. Uses markd.js library for rendering and generating Markdown from text.`
         type: 'private',
         startDate: new Date(Date.parse('2022-10-30')),
         endDate: new Date(Date.parse('2022-11-05')),
+        languages: new Set([Language.TypeScript, Language.HTML, Language.CSS]),
+        frameworks: new Set([Framework.Angular]),
       },
       {
         title: 'Keyboe',
@@ -60,6 +69,8 @@ and generates TypeScript and template code`,
         type: 'private',
         startDate: new Date(Date.parse('2023-03-07')),
         endDate: new Date(Date.parse('2023-04-08')),
+        languages: new Set([Language.TypeScript, Language.HTML, Language.CSS]),
+        frameworks: new Set([Framework.Angular]),
       },
       {
         imageUrl: 'images/showcase/hungmath.jpg',
@@ -70,6 +81,8 @@ and generates TypeScript and template code`,
         type: 'private',
         startDate: new Date(Date.parse('2023-04-09')),
         endDate: new Date(Date.parse('2023-04-28')),
+        languages: new Set([Language.TypeScript, Language.HTML, Language.CSS]),
+        frameworks: new Set([Framework.Angular]),
       },
       {
         title: 'Campus Cookbook',
@@ -78,6 +91,14 @@ and generates TypeScript and template code`,
         type: 'private',
         startDate: new Date(Date.parse('2025-02-19')),
         endDate: new Date(Date.parse('2025-03-27')),
+        languages: new Set([
+          Language.Python,
+          Language.HTML,
+          Language.CSS,
+          Language.JavaScript,
+          Language.SQL,
+        ]),
+        frameworks: new Set([Framework.Django]),
       },
       {
         title: 'Project Chimera',
@@ -87,6 +108,7 @@ hardcoded simulation lengths while benchmarking agents.`,
         type: 'public',
         startDate: new Date(Date.parse('2025-09-25')),
         endDate: new Date(Date.parse('2025-09-27')),
+        languages: new Set([Language.Python]),
       },
       {
         title: 'PyPDF library',
@@ -96,6 +118,7 @@ the use of a single font file for variations like italics, bold text and differe
         type: 'public',
         startDate: new Date(Date.parse('2025-09-25')),
         endDate: new Date(Date.parse('2025-10-29')),
+        languages: new Set([Language.Python]),
       },
     ];
     this.sortExhibits();
