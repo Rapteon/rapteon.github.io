@@ -23,6 +23,15 @@ button:hover {
   cursor: pointer;
 }
 
+@media screen and (max-width: 2200px) {
+  header > img {
+    max-height: 15vh;
+  }
+  button {
+    padding: 1.2rem;
+  }
+}
+
 @media screen and (max-width: 1600px) {
   header > img {
     max-height: 20vh;

@@ -30,6 +30,13 @@ app-root {
   height: 100%;
 }
 
+@media screen and (max-width: 2200px) {
+  body {
+    max-width: 50vw;
+    font-size: 1.2rem;
+  }
+}
+
 @media screen and (max-width: 1600px) {
   body {
     max-width: 60vw;
